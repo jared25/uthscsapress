@@ -1,0 +1,731 @@
+$socialIconColor: white;
+$topBorderColor: #f26722 5px solid;
+
+
+//headings
+h2, .colorized-heading{
+    color: #008c99;
+	font-size: 1.5625em;
+	margin: 0 0 20px;
+}
+
+@font-face{
+    font-family: uthscsa-icons;
+    src: url("../../assets/fonts/uthscsa/uthscsa-icons.eot");
+	src: url("../../assets/fonts/uthscsa/uthscsa-icons.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/uthscsa/uthscsa-icons.woff") format("woff"), url("../../assets/fonts/uthscsa/uthscsa-icons.ttf") format("truetype"), url("../../assets/fonts/uthscsa/uthscsa-icons.svg#uthscsa-icons") format("svg"); font-weight: normal; font-style: normal;
+    font-weight:400;
+}
+.footer-closing-padding{
+	padding-top:2.5em;
+	padding-left:10%;
+	padding-right:10%;
+}
+.no-list-style{
+	list-style-type:none;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { 
+	transform: scale(1.1); 
+	overflow:hidden;
+}
+
+.top-uthscsa-icon{
+	font-size: 25px;
+	line-height: 1px;
+	color: rgba(0, 0, 0, 0.2);
+}
+.center-fix{
+	margin:0 auto;
+}
+.footer-closing-note{
+    background-color: rgba(0, 0, 0, 0.3);
+	min-height:150px;
+	
+	p{
+	text-align:center;
+	margin:1.5em 0;
+	}
+}
+.uthscsa-footer{
+	background-image: url("http://uthscsadev.uthscsa.edu/images/footer-hexagons.png");
+	background-color: #f26722;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: white;
+}
+.social-media-icons{
+	list-style-type:none;
+	width:100px;
+	vertical-align: top;
+	
+	.social-icons {
+	display:inline-block;
+	padding-right: 1em;
+	color: $socialIconColor;
+	}
+}
+
+
+// Page header for featured image 1
+
+.featured-image-tab {
+	background: url('../images/demo/page-header-bleed-hexes.png') bottom center;
+	background-size: cover;
+	background-position: bottom;
+	padding: rem-calc(40%) 0;
+	margin: 0 0 rem-calc(32);
+	background-color: #a43d0a;
+	max-height: 400px;
+	position: relative;
+	text-align: left;
+	-webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+	-moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+	box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+	
+	.featured-container{
+		padding-top: 4em;
+		padding-bottom: 3em;
+	}
+	.featured-image{
+		float:right;
+	}
+	
+	.featured-title{
+		color:white;
+		float:left;
+	}
+		.featured-text{
+		color:white;
+		float:left;
+		font-size:1.5em;
+		font-weight:100;
+	}
+
+}
+
+// Page header for featured-two page template
+
+.featured-image-two-tab {
+	background: url('../images/demo/page-header-bleed-hexes.png') bottom center;
+	background-size: cover;
+	background-position: bottom;
+	padding: rem-calc(40%) 0;
+	margin: 0 0 rem-calc(32);
+	background-color: #0066a4;
+	max-height: 400px;
+	position: relative;
+	text-align: left;
+	-webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+	-moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+	box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+	overflow:hidden;
+}
+.featured-two-container{
+	position:relative;
+	color:white;
+}
+.hex {	
+	overflow:hidden;
+	position: absolute;
+	z-index: 1;
+	top:-100px;
+	left: 900px;
+}
+.featured-two-title{
+	position:relative;
+	color:white;
+	z-index:2;
+	margin-top:2em;
+	left: -100px;
+}
+.featured-two-text{
+	position:relative;
+	left: -100px;
+	font-size:1em;
+	font-weight:100;
+	weight:300;
+	color:white;
+	z-index:5;
+	padding-right:1em;
+}
+.featured-two-image{
+
+}
+
+.white {
+	color:white;
+}
+
+
+.site-title{
+	font-size:2em;
+	width:200px;
+	float:left;
+	position:relative;
+	left:600px;
+	margin-top:.4em;
+}
+
+
+//Pannel CSS
+
+.feature-box-orange {
+    min-height: 277px;
+	min-width:300px;
+	background-color: #a43d0a;
+	background-image: url('../../assets/images/uthscsa/bg-sidebar-colorized-hexes.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.feature-box-blue {
+    min-height: 277px;
+	min-width:300px;
+	background-color: #202c54;
+	background-image: url('../../assets/images/uthscsa/bg-sidebar-colorized-hexes.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.feature-box-white {
+    min-height: 277px;	
+	min-width:300px;
+	background-color: #c2ab8c;
+	background-image: url('../../assets/images/uthscsa/bg-sidebar-colorized-hexes.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.feature-box-light-orange {
+    min-height: 277px;
+	min-width:300px;
+	background-color: #f26722;
+	background-image: url('../../assets/images/uthscsa/bg-sidebar-colorized-hexes.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.feature-box-light-blue {
+    min-height: 277px;
+	min-width:300px;
+	background-color: #0066a4;
+	background-image: url('../../assets/images/uthscsa/bg-sidebar-colorized-hexes.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.feature-content{
+	padding:2em;
+	color: #fff;
+	text-align:center;
+	
+	p {
+	margin: 0 auto;
+	padding-top:5px;
+	max-width:250px;
+	}
+	
+	.feature-icon{
+	font-size: 2em;
+	}
+}
+.feature-title{
+	border: #fff 1px solid;
+	margin:0 auto;
+	max-width:200px;
+	text-align:center;
+	font-size:1.5em;
+	padding:.2em;
+	color:white;
+}
+
+
+//End Pannel CSS
+
+//Orange Circles
+.circle {
+    background: #f26722;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    -moz-border-radius: 2.5em;
+    -webkit-border-radius: 2.5em;
+    border-radius: 2.5em;
+}
+.left {
+    float: left !important;
+}
+.circle span {
+    text-align: center;
+    font-size: 1.4375em;
+    margin-top: 0.1em;
+    display: inline-block;
+    color: #fff;
+}
+//End Span
+
+.featured-page-div{
+	max-height:30em;
+	
+	.featured-page-image{
+	
+	}
+	
+}
+
+.meta-text-custom{
+	width:100%;
+}
+
+.white-para{
+	color: white;
+}
+.logoHeader {
+	margin: 1.5em;
+	
+}
+.top-border{
+	border-top:$topBorderColor;
+}
+
+.top-bar-right{
+	float: right;
+	position: absolute;
+	right: 0;
+	overflow: hidden;
+	padding-left: 50px;
+	background-image: url('../../assets/images/uthscsa/bg-sidebar-colorized-hexes.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-right: 181.5px;
+	background-color:#a43d0a;
+	border-left: .21em solid white;
+	
+	ul{
+		li{
+	background-color:#a43d0a;
+		}
+	}
+}
+.utility{
+    position: absolute;
+    top: 0;
+    right: 13em;
+	
+	.right-top-info{
+	background-color:#f26722;
+	color:white;
+	padding-top: .5em;
+	padding-bottom: .2em;
+	padding-right: 1.2em;
+	padding-left:.5em;
+	border-bottom-left-radius:1em;
+	border-bottom-right-radius:1em;
+	}
+}
+
+form{
+	width:auto;
+	margin:0 auto;
+}
+
+input[type=text]{
+	color:#bcbcbc;
+}
+.custom-search{
+	max-width:250px;
+	min-width: 225px;
+	float:right;
+	padding-right:1em
+}
+
+//Icon Font Family
+[class*=" icon-"]::before {
+    font-family: "uthscsa-icons" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000315}}
+[data-icon]:before { font-family: "uthscsa-icons" !important; content: attr(data-icon); font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000328}}
+[class^="icon-"]:before, footer.footer-top-level#main-footer .footer-top hr.hex:after, [class*=" icon-"]:before { font-family: "uthscsa-icons" !important; font-style: normal !important; font-weight: normal !important; font-variant: normal !important; text-transform: none !important; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000341}}
+.icon-person-labcoat-male:before { /*! content: "k"; */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000344}}
+.icon-book:before { content: "p"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000347}}
+.icon-quicklinks:before { content: "q"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000350}}
+.icon-search:before { content: "r"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000353}}
+.icon-med-case-lines:before { content: "s"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000356}}
+.icon-close:before { content: "t"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000359}}
+.icon-carat-double-up:before { content: "u"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000362}}
+.icon-carat-double-down:before { content: "v"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000365}}
+.icon-carat-double-left:before { content: "w"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000368}}
+.icon-carat-double-right:before { content: "x"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000371}}
+.icon-facebook:before { content: "z"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000374}}
+.icon-email:before { content: "B"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000377}}
+.icon-arrow-circle-down:before { content: "C"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000380}}
+.icon-arrow-circle-left:before { content: "D"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000383}}
+.icon-arrow-circle-right:before { content: "E"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000386}}
+.icon-arrow-circle-up:before { content: "F"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000389}}
+.icon-calendar-grid:before { content: "G"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000392}}
+.icon-calendar-blank:before { content: "H"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000395}}
+.icon-facebook-square:before { content: "I"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\0000398}}
+.icon-linkedin-square:before { content: "K"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003101}}
+.icon-googleplus-square:before { content: "L"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003104}}
+.icon-youtube-square:before { content: "M"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003107}}
+.icon-doctor:before { content: "N"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003110}}
+.icon-person:before { content: "P"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003113}}
+.icon-world:before { content: "Q"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003116}}
+.icon-reset:before { content: "R"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003119}}
+.icon-question-circle:before { content: "S"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003122}}
+.icon-information-circle:before { content: "T"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003125}}
+.icon-exclaim-circle:before { content: "U"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003128}}
+.icon-carat-down:before { content: "V"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003131}}
+.icon-carat-left:before { content: "W"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003134}}
+.icon-carat-right:before { content: "X"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003137}}
+.icon-carat-up:before { content: "Y"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003140}}
+.icon-checkbox-checked:before { content: "Z"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003143}}
+.icon-checkbox-unchecked:before { content: "0"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003146}}
+.icon-map-marker:before { content: "1"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003149}}
+.icon-lightbulb:before { content: "2"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003152}}
+.icon-star:before { content: "3"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003155}}
+.icon-document:before { content: "4"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003158}}
+.icon-download:before { content: "5"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003161}}
+.icon-home:before { content: "7"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003164}}
+.icon-plus:before { content: "8"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003167}}
+.icon-minus:before { content: "9"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003170}}
+.icon-arrow-triangle-down:before { content: "!"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003173}}
+.icon-arrow-triangle-left:before { content: "\""; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003176}}
+.icon-arrow-triangle-right:before { content: "#"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003179}}
+.icon-arrow-triangle-up:before { content: "$"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003182}}
+.icon-flask:before { content: "%"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003185}}
+.icon-question:before { content: "&"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003188}}
+.icon-information:before { content: "'"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003191}}
+.icon-exclaim:before { content: "("; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003194}}
+.icon-tag-2:before { content: "J"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003197}}
+.icon-tint:before { content: "."; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003200}}
+.icon-trash-bin:before { content: "/"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003203}}
+.icon-trello:before { content: ":"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003206}}
+.icon-truck:before { content: ";"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003209}}
+.icon-tumblr:before { content: "<"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003212}}
+.icon-umbrella:before { content: ">"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003215}}
+.icon-unlock-2:before { content: "@"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003218}}
+.icon-upload:before { content: "["; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003221}}
+.icon-user:before { content: "]"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003224}}
+.icon-window-list:before { content: "y"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003227}}
+.icon-gamepad:before { content: "\e007"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003230}}
+.icon-gears-setting:before { content: "\e011"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003233}}
+.icon-harddrive:before { content: "6"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003236}}
+.icon-headphone:before { content: "\e010"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003239}}
+.icon-italic:before { content: "*"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003242}}
+.icon-key:before { content: "+"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003245}}
+.icon-like:before { content: ","; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003248}}
+.icon-like-filled:before { content: "-"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003251}}
+.icon-log-in:before { content: "\e012"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003254}}
+.icon-log-out:before { content: "?"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003257}}
+.icon-minus-square:before { content: "^"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003260}}
+.icon-money-banknote:before { content: "_"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003263}}
+.icon-pinterest:before { content: "`"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003266}}
+.icon-pinterest-square:before { content: "{"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003269}}
+.icon-puzzle:before { content: "|"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003272}}
+.icon-qrcode:before { content: "}"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003275}}
+.icon-resize-down:before { content: "~"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003278}}
+.icon-resize-expand:before { content: "\\"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003281}}
+.icon-share-square:before { content: "\e000"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003284}}
+.icon-share-square-1:before { content: "\e001"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003287}}
+.icon-sort-amount-two:before { content: "\e002"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003290}}
+.icon-sort-numeric:before { content: "\e003"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003293}}
+.icon-stop:before { content: "\e004"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003296}}
+.icon-tasks:before { content: "\e005"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003299}}
+.icon-twitter:before { content: "A"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003302}}
+.icon-stethoscope:before { content: "O"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003305}}
+.icon-talk-chat:before { content: "\e008"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003308}}
+.icon-talk-chat-2:before { content: ")"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003311}}
+.icon-tumblr-square:before { content: "="; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003314}}
+.icon-video-camera:before { content: "\e006"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003317}}
+.icon-apple:before { content: "a"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003320}}
+.icon-checkbox-pen:before { content: "b"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003323}}
+.icon-dollar-sign:before { content: "c"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003326}}
+.icon-double-arrows:before { content: "\e00b"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003329}}
+.icon-hexagon:before, footer.footer-top-level#main-footer .footer-top hr.hex:after { content: "d"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003332}}
+.icon-house:before { content: "\e00a"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003335}}
+.icon-med-case:before { content: "f"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003338}}
+.icon-medal:before { content: "g"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003341}}
+.icon-microscope:before { content: "h"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003344}}
+.icon-people:before { content: "i"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003347}}
+.icon-person-labcoat-female:before { content: "j"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003350}}
+.icon-steps:before { content: "\e00c"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003353}}
+.icon-toolbox:before { content: "\e009"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003356}}
+.icon-tooth:before { content: "l"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003359}}
+.icon-tooth-sparkle:before { content: "m"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003362}}
+.icon-toothbrush:before { content: "n"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003365}}
+.icon-toothbrush-toothpaste:before { content: "o"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003368}}
+.icon-instagram:before { content: "\e00d"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003371}}
+.icon-logo-hex-group:before { content: "e"; }
+
+/* ---------------------- */
+/* Colorizing Icons                  */
+/* ---------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003393}}
+.icon-facebook.colorize-icon { color: #3b5997; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003396}}
+.icon-twitter.colorize-icon { color: #41b7d8; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003399}}
+.icon-facebook-square.colorize-icon { color: #3b5997; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003402}}
+.icon-twitter-square.colorize-icon { color: #41b7d8; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003405}}
+.icon-linkedin-square.colorize-icon { color: #0073b2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003408}}
+.icon-googleplus-square.colorize-icon { color: #d64937; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003411}}
+.icon-youtube-square.colorize-icon { color: #cd201f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003414}}
+.icon-clock.colorize-icon { color: #7a68ad; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003417}}
+.icon-medal.colorize-icon { color: #0564a5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003420}}
+.icon-dollar-sign.colorize-icon { color: #037557; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003423}}
+.icon-colorized-gray { color: #cbc2b6; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jacquelinesimons\/newcity\/app\/styles\/_icons\.scss}line{font-family:\00003426}}
+.icon-print:before { content: "\e00e"; }
+

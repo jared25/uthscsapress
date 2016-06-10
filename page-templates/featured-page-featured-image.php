@@ -1,13 +1,32 @@
 <?php
 /*
-Template Name: Full Width
+Template Name: Featured Page w/ Image
 */
 get_header(); ?>
-		<header id="page-title-banner" role="banner">
-			<div class="row">
-				<h1 class="entry-title"><?php the_title(); ?></h1>
-			</div>
+		<header class="featured-image-tab" role="banner">
+				<div class="row featured-container">
+					<div class="large-5 columns">
+					<div class="featured-title">
+						<h1 class="white"><?php the_title(); ?></h1>
+					</div>
+					<div class="featured-text">
+					<?php
+						// Retrieves the stored value from the database
+						$meta_value = get_post_meta( get_the_ID(), 'meta-text', true );
+					 
+						// Checks and displays the retrieved value
+						if( !empty( $meta_value ) ) {
+							echo $meta_value;
+						}
+					?>
+					</div>
+					</div>
+					<div class="featured-image large-5 columns">
+						<?php if ( has_post_thumbnail() ) : the_post_thumbnail(); endif; ?>
+					</div>
+				</div>
 		</header>
+
 <?php //get_template_part( 'template-parts/featured-image' ); ?>
 <div id="page-full-width" role="main">
 <?php do_action( 'foundationpress_before_content' ); ?>

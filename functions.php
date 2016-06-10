@@ -13,6 +13,8 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
+ /** Custome Functions Added by Jared*/
+require_once( 'library/custom-functions.php' );
 
 /** Various clean up functions */
 require_once( 'library/cleanup.php' );

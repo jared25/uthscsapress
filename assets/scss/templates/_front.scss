@@ -1,27 +1,38 @@
+//Hero Pattern Colors: Orange: #a43d0a, Teal: #005d66, Blue: #004067, Purple: #4b3d73
+//
+$patternColor: #a43d0a;
+
 // Page header
-#front-hero {
+#page-title-banner {
 	.marketing {
 		@include grid-row();
 		max-width: 55rem;
 	}
 
 	@include breakpoint(small) {
-		background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
+		background: url('../images/demo/page-header-bleed-hexes.png') bottom center;
 		background-size: cover;
 		background-position: bottom;
-		padding: rem-calc(65%) 0;
+		padding: rem-calc(40%) 0;
 		margin: 0 0 rem-calc(32);
 		height: auto;
-		position: relative;
+		//position: relative;
 		text-align: left;
+		-webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+		-moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+		box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
 	}
 
 	@include breakpoint(medium) {
-		background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
+		background: url('../images/demo/page-header-bleed-hexes.png') bottom center;
 		background-size: cover;
-		background-position: center;
-		height: rem-calc(685);
+		background-position: top;
+		height: rem-calc(150);
 		margin: 0 0 rem-calc(72);
+		background-color: $patternColor;
+	    -webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+		-moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+		box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
 	}
 
 	#watch {
@@ -96,6 +107,7 @@
 
 		@include breakpoint(small) {
 			font-size: 2.2rem;
+			padding-left:1rem;
 		}
 
 		@include breakpoint(medium) {

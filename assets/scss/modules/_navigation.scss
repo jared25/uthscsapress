@@ -35,11 +35,11 @@
   .menu a {
     height: 45px;
     line-height: 45px;
-    color: #e6e6e6;
+    color: #fff;
     padding-top: 0;
     padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
+    font-weight: normal;
+    font-size: 1rem;
     line-height: 1;
 
     &:hover:not(.button) {
@@ -48,11 +48,11 @@
   }
 
   .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  .menu li:not(:last-child) { border-right: 0px solid white; }
 
   .dropdown.menu .submenu {
     background-color: #121212;
-    color: #e6e6e6;
+    color: #fff;
     border: 0;
   }
 

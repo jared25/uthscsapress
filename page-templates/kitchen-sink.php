@@ -7,6 +7,14 @@ get_header(); ?>
 
 	<?php /* Start loop */ ?>
 	<?php while ( have_posts() ) : the_post(); ?>
+		<header id="page-title-banner" role="banner">
+		<div class="row">
+			<h1 class="entry-title"><?php the_title(); ?></h1>
+		</div>
+		</header>
+		<div class="row">
+			<?php the_content(); ?>
+		</div>
 
 		<div id="kitchen-sink" role="main">
 			<header>
@@ -876,10 +884,6 @@ get_header(); ?>
 				</nav>
 
 			</div><!-- Close kitchen-sink-page-wrapper -->
-
-		<div class="entry-content">
-			<?php the_content(); ?>
-		</div>
 
 	<?php endwhile; ?>
 <?php get_footer();
