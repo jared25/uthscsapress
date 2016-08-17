@@ -9,6 +9,8 @@
  //Custom Functions by Jared Ozuna
  //Controls - (User Control), Settings - (Database selection), Sections - (Group of Options)
  
+ require get_template_directory(). '/settings/uthscsaPress_settings.php';
+ 
  //Creating custom theme colors
  function FoundationPress_customize_register( $wp_customize ) {
 	 //ADD SETTINGS BELOW
@@ -22,13 +24,14 @@
 	 $wp_customize->add_section('fp_test_options', array(
 	 'title' => __('Theme Color Switch', 'FoundationPress'),
 	 'priority' => 80,
+	 'description' => __('Please choose the color scheme that best suits your sites status', 'FoundationPress')
 	 ));
 	 
 	 $wp_customize->add_control(
 	 	 'theme_color', 
 	 array(
 		'type' => 'radio',
-		'label' => 'Test Radio',
+		'label' => 'Color Schemes',
 		'section' => 'fp_test_options',
 		'settings' => 'fp_theme_switch_control',
 		'choices' => array(
@@ -68,7 +71,13 @@ add_action( 'customize_register', 'FoundationPress_Logo_customizer' );
  */
  
  function wpdocs_register_meta_boxes() {
-	add_meta_box( 'meta-box-id', __( 'Page Sub-Header Text', 'textdomain' ), 'wpdocs_my_display_callback', 'page', 'side' );
+	add_meta_box( 
+	'meta-box-id',
+	__( 'Page Sub-Header Text', 'textdomain' ),
+	'wpdocs_my_display_callback',
+	'page', 
+	'side' 
+	);
 }
 add_action( 'add_meta_boxes', 'wpdocs_register_meta_boxes' );
 
@@ -108,8 +117,11 @@ function wpdocs_save_meta_box( $post_id ) {
     }
  
     // Checks for input and sanitizes/saves if needed
-    if( isset( $_POST[ 'meta-text' ] ) ) {
-        update_post_meta( $post_id, 'meta-text', sanitize_text_field( $_POST[ 'meta-text' ] ) );
+    if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
+        return;
+    }
+    if ( isset( $_POST[ 'job_id' ] ) ) {
+    	update_post_meta( $post_id, 'job_id', sanitize_text_field( $_POST[ 'job_id' ] ) );
     }
 }
 add_action( 'save_post', 'wpdocs_save_meta_box' );

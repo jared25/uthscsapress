@@ -91,10 +91,12 @@ add_filter( 'wp_list_pages', 'foundationpress_active_list_pages_class', 10, 2 );
 endif;
 
 if ( ! class_exists( 'Foundationpress_Comments' ) ) :
-class Foundationpress_Comments extends Walker_Comment{
+class Foundationpress_Comments extends Walker_Comment {
 
 	// Init classwide variables.
 	var $tree_type = 'comment';
+
+	// Comment ID
 	var $db_fields = array( 'parent' => 'comment_parent', 'id' => 'comment_ID' );
 
 	/** CONSTRUCTOR
@@ -143,7 +145,7 @@ class Foundationpress_Comments extends Walker_Comment{
 			<div class="author-meta vcard author">
 
 			<?php printf( __( '<cite class="fn">%s</cite>', 'foundationpress' ), get_comment_author_link() ) ?>
-			<time datetime="<?php echo comment_date( 'c' ) ?>"><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf( __( '%1$s', 'foundationpress' ), get_comment_date(),  get_comment_time() ) ?></a></time>
+			<time datetime="<?php echo comment_date( 'c' ) ?>"><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf( get_comment_date(), get_comment_time() ) ?></a></time>
 
 			</div><!-- /.comment-author -->
 

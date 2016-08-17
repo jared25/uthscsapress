@@ -1,231 +1,184 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: FoundationPress v5.4\n"
+"Project-Id-Version: foundationpress-libsass-template 5.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-12 17:53+0200\n"
-"PO-Revision-Date: 2016-04-12 17:59+0200\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2016-07-05 16:58+0300\n"
+"PO-Revision-Date: 2016-07-05 19:42+0300\n"
 "Language-Team: \n"
-"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.7\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
-"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
-"X-Textdomain-Support: yes\n"
-"X-Poedit-SearchPath-0: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.8\n"
+"Last-Translator: Eli Cohen <elicohenator@gmail.com>\n"
+"Language: he\n"
 
-# @ FoundationPress
 #: 404.php:8
 msgid "File Not Found"
-msgstr "Datei nicht gefunden"
+msgstr "הקובץ לא נמצא."
 
-# @ FoundationPress
 #: 404.php:12
 msgid ""
 "The page you are looking for might have been removed, had its name changed, "
 "or is temporarily unavailable."
-msgstr ""
-"Die Seite, die du suchst, wurde möglicherweise entfernt oder umbenannt, oder "
-"ist vorübergehend nicht verfügbar."
+msgstr "הדף שאתה מחפש אולי הוסר, שמו השתנה או אינו זמין באופן זמני."
 
-# @ FoundationPress
 #: 404.php:14
 msgid "Please try the following:"
-msgstr "Bitte versuche folgendes:"
+msgstr "נסה את הפעולות הבאות:"
 
-# @ FoundationPress
 #: 404.php:16
 msgid "Check your spelling"
-msgstr "Überprüfe deine Eingabe"
+msgstr "בדוק את האיות שלך"
 
-# @ FoundationPress
 #: 404.php:17
 #, php-format
 msgid "Return to the <a href=\"%s\">home page</a>"
-msgstr "Zurück zur <a href=\"%s\">Startseite</a>"
+msgstr "לחזור <a href=\"%s\">דף הבית</a>"
 
-# @ FoundationPress
 #: 404.php:18
 msgid "Click the <a href=\"javascript:history.back()\">Back</a> button"
-msgstr ""
-"Klicke auf die <a href=\"javascript:history.back()\">Zurück</a> Schaltfläche"
+msgstr "לחץ על לחצן <a href=\"javascript:history.back()\">הקודם</a>"
 
-# @ FoundationPress
 #. /previous pages when applicable
 #: archive.php:21 index.php:24 search.php:25
 msgid "&larr; Older posts"
-msgstr "&larr; ältere Beiträge"
+msgstr "&larr; פוסטים קודמים"
 
-# @ FoundationPress
 #: archive.php:22 index.php:25 search.php:26
 msgid "Newer posts &rarr;"
-msgstr "neuere Beiträge &rarr;"
+msgstr "&larr; פוסטים קודמים"
 
-# @ FoundationPress
 #: comments.php:8
 #, php-format
 msgid "<cite class=\"fn\">%s</cite>"
-msgstr ""
+msgstr "‏<cite class=“fn”>%s</cite>"
 
-# @ FoundationPress
 #: comments.php:9
 #, php-format
 msgid "%1$s"
-msgstr ""
+msgstr "%1$s"
 
-# @ FoundationPress
 #: comments.php:10
 msgid "(Edit)"
-msgstr "(Bearbeiten)"
+msgstr "(עריכה)"
 
-# @ FoundationPress
 #: comments.php:16
 msgid "Your comment is awaiting moderation."
-msgstr "Dein Kommentar wartet auf Freischaltung."
+msgstr "התגובה שלך ממתינה לאישור."
 
-# @ FoundationPress
 #: comments.php:31
 msgid "Please do not load this page directly. Thanks!"
-msgstr "Bitte diese Seite nicht direkt laden. Vielen Dank!"
+msgstr "בבקשה לא לטעון דף זה ישירות. תודה!"
 
-# @ FoundationPress
 #: comments.php:36
 msgid "This post is password protected. Enter the password to view comments."
-msgstr ""
-"Dieser Beitrag ist passwortgeschützt. Um die Kommentare zu sehen, musst du "
-"das Passwort eingeben."
+msgstr "פוסט זה מוגן בסיסמה. הזן את הסיסמה כדי לצפות בתגובות."
 
-# @ FoundationPress
 #: comments.php:46
 msgid "No Responses to"
-msgstr "Keine Antworten auf"
+msgstr "אין תגובות ל"
 
-# @ FoundationPress
 #: comments.php:46
 msgid "One Response to"
-msgstr "Eine Antwort auf"
+msgstr "תגובה אחת ל"
 
-# @ FoundationPress
 #: comments.php:46
 msgid "% Responses to"
-msgstr "% Antworten auf"
+msgstr "% תגובות ל"
 
-# @ FoundationPress
 #: comments.php:53
 msgid "&larr; Older comments"
-msgstr "&larr; ältere Kommentare"
+msgstr "‏&larr; תגובות ישנות יותר"
 
-# @ FoundationPress
 #: comments.php:54
 msgid "Newer comments &rarr;"
-msgstr "neuere Kommentare &rarr;"
+msgstr "תגובות חדש יותר &rarr;"
 
-# @ FoundationPress
 #: comments.php:61
 msgid "Leave a Reply"
-msgstr "Antworten"
+msgstr "הוסף תגובה"
 
-# @ FoundationPress
 #: comments.php:61
 #, php-format
 msgid "Leave a Reply to %s"
-msgstr "Auf %s antworten"
+msgstr "הוסף תגובה ל%s"
 
-# @ FoundationPress
 #: comments.php:64
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr ""
-"Du musst <a href=\"%s\">angemeldet</a> sein, um einen Kommentar abzugeben."
+msgstr "אתה חייב להיות <a href=\"%s\">מחובר</a> בכדי לפרסם תגובה."
 
-# @ FoundationPress
 #: comments.php:68
 #, php-format
 msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
-msgstr "Angemeldet als <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "מחובר כ- <a href=\"%s/wp-admin/profile.php\">%s</a>."
 
-# @ FoundationPress
 #: comments.php:68
 msgid "Log out of this account"
-msgstr "Von diesem Konto abmelden"
+msgstr "להתנתק מהחשבון"
 
-# @ FoundationPress
 #: comments.php:68
 msgid "Log out &raquo;"
-msgstr "Abmelden &raquo;"
+msgstr "להתנתק &raquo;"
 
-# @ FoundationPress
 #: comments.php:71
 msgid "Name"
-msgstr "Name"
+msgstr "שם"
 
-# @ FoundationPress
 #: comments.php:71 comments.php:75
 msgid " (required)"
-msgstr "(erforderlich)"
+msgstr "(חובה)"
 
-# @ FoundationPress
 #: comments.php:75
 msgid "Email (will not be published)"
-msgstr "E-Mail (wird nicht veröffentlicht)"
+msgstr "דוא\"ל (לא יפורסם באתר)"
 
-# @ FoundationPress
 #: comments.php:79
 msgid "Website"
-msgstr "Website"
+msgstr "אתר"
 
-# @ FoundationPress
 #: comments.php:84
 msgid "Comment"
-msgstr "Kommentar"
+msgstr "תגובה"
 
-# @ FoundationPress
 #: comments.php:87
 msgid "You can use these tags:"
-msgstr "Du kannst diese Tags verwenden:"
+msgstr "אתה יכול להשתמש בתגים האלה:"
 
-# @ FoundationPress
 #: comments.php:88
 msgid "Submit Comment"
-msgstr "Kommentar absenden"
+msgstr "שלח תגובה"
 
-# @ FoundationPress
 #: content-none.php:11
 msgid "Nothing Found"
-msgstr "nichts gefunden"
+msgstr "לא נמצא דבר"
 
-# @ FoundationPress
 #: content-none.php:17
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Bereit, deinen ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Hier "
-"geht's los</a>"
+msgstr "מוכנים לפרסם את הפוסט הראשון שלכם? <a href=\"%1$s\">התחילו כאן</a>."
 
-# @ FoundationPress
 #: content-none.php:21
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Es tut uns leid, aber es konnten keine Übereinstimmungen gefunden werden. "
-"Bitte versuche es mit einigen anderen Suchbegriffen erneut."
+"אנו מצטערים, לא נמצאו תוצאות עבור הביטוי המבוקש. יש לנסות שוב בעזרת מילות "
+"חיפוש אחרות."
 
-# @ FoundationPress
 #: content-none.php:26
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
-"Leider konnten wir die angefragte Seite nicht finden. Vielleicht hilft dir "
-"die Suchfunktion weiter."
+msgstr "נראה שאנחנו לא מוצאים מה שאתה מחפש. אולי חיפוש יכול לעזור."
 
-# @ FoundationPress
 #. /archive/search.
 #. *
 #. * @subpackage FoundationPress
@@ -233,101 +186,87 @@ msgstr ""
 #.
 #: content.php:16
 msgid "Continue reading..."
-msgstr "Weiterlesen..."
+msgstr "להמשך קריאה…"
 
-# @ FoundationPress
 #: hero.php:40 kitchen-sink.php:739 page-full.php:19 page-sidebar-left.php:21
 #: page.php:18 single.php:27 woocommerce.php:18
 msgid "Pages:"
-msgstr "Seiten:"
+msgstr "עמודים:"
 
-# @ FoundationPress
 #: library/entry-meta.php:4
 #, php-format
 msgid "Posted on %s at %s."
-msgstr "Veröffentlicht am %s um %s."
+msgstr "פורסם ב-: %s ב-: %s."
 
-# @ FoundationPress
 #: library/entry-meta.php:5
 msgid "Written by"
-msgstr "Geschrieben von"
+msgstr "נכתב ע”י"
 
-# @ FoundationPress
 #: library/foundation.php:16
 msgid "&laquo;"
 msgstr "&laquo;"
 
-# @ FoundationPress
 #: library/foundation.php:17
 msgid "&raquo;"
 msgstr "&raquo;"
 
-# @ FoundationPress
 #: library/foundation.php:40
 #, php-format
 msgid ""
 "Please assign a menu to the primary menu location under %1$s or %2$s the "
 "design."
-msgstr "Bitte weise ein Menü zur primären Menüposition %1$s oder %2$s zu."
+msgstr "נא הקצה תפריט אל המיקום בתפריט הראשי תחת %1$s או %2$s העיצוב."
 
-# @ FoundationPress
 #: library/foundation.php:41
 #, php-format
 msgid "<a href=\"%s\">Menus</a>"
-msgstr "<a href=\"%s\">Menüs</a>"
+msgstr "<a href=\"%s\">תפריטים</a>"
 
-# @ FoundationPress
 #: library/foundation.php:44
 #, php-format
 msgid "<a href=\"%s\">Customize</a>"
-msgstr "<a href=\"%s\">Anpassen</a>"
+msgstr "<a href=\"%s\">התאמה אישית</a>"
 
-# @ FoundationPress
 #: library/widget-areas.php:6
 msgid "Sidebar widgets"
-msgstr "Seitenleisten-Widgetbereich"
+msgstr "ווידג’טים של הסרגל הצדדי"
 
-# @ FoundationPress
 #: library/widget-areas.php:7
 msgid "Drag widgets to this sidebar container."
-msgstr "Ziehe Widgets zu diesem Seitenleisten-Bereich."
+msgstr "גרור ווידג'טים לקונטיינר הסרגל הצדדי."
 
-# @ FoundationPress
 #: library/widget-areas.php:16
 msgid "Footer widgets"
-msgstr "Footer-Widgetbereich"
+msgstr "אזור הווידג'טים שבפוטר"
 
-# @ FoundationPress
 #: library/widget-areas.php:17
 msgid "Drag widgets to this footer container"
-msgstr "Ziehe Widgets zu diesem Footer-Bereich."
+msgstr "גרור ווידג'טים לקונטיינר שבפוטר"
 
 #: node_modules/grunt-pot/test/fixtures/some-file.php:3
 msgid "I'm a translatable string."
-msgstr ""
+msgstr "מחרוזת לתרגום"
 
 #: node_modules/grunt-pot/test/fixtures/some-other-file.php:4
 msgid "Me too"
-msgstr ""
+msgstr "גם אני"
 
 #: node_modules/grunt-pot/test/fixtures/some-other-file.php:7
 #, php-format
 msgid "I have %d apple"
 msgid_plural "I have %d apples"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] ". יש לי תפוח %d"
+msgstr[1] ". יש לי %d תפוחים"
 
 #. / TRANSLATORS: This should be translated as a shorthand for YEAR-MONTH-DAY using 4, 2 and 2 digits.
 #: node_modules/grunt-pot/test/fixtures/some-other-file.php:16
 msgid "yyyy-mm-dd"
-msgstr "dd.mm.yyyy"
+msgstr "יי-חח-שנהה"
 
-# @ FoundationPress
 #: search.php:7
 msgid "Search Results for"
-msgstr "Suchergebnisse für"
+msgstr "תוצאות חיפוש עבור"
 
-# @ FoundationPress
 #: searchform.php:6 searchform.php:10
 msgid "Search"
-msgstr "Suche"
+msgstr "חיפוש"
