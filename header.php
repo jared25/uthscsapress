@@ -35,6 +35,7 @@
 				echo '.menu .active > a { background-color: #a43d0a;}';
 				echo '.top-bar .menu a:hover:not(.button) {background-color: #d44f0d;}';
 				echo '.site-title {color:#d44f0d;}';
+				echo '.title-bar{background-color:#d44f0d;}';
                 echo '</style>';
                 break;
             case 'purpleTheme':
@@ -50,6 +51,7 @@
 				echo '.top-bar-right, .top-bar-right ul li{ background-color: #4b3d73; }';
 				echo '.uthscsa-footer{ background-color: #7a68ae; }';
 				echo '.site-title {color:#4b3d73; }';
+				echo '.title-bar{background-color:#4b3d73;}';
                 echo '</style>';
                 break;
             case 'tealTheme':
@@ -65,6 +67,7 @@
 				echo '.top-bar-right, .top-bar-right ul li{ background-color: #005d66; }';
 				echo '.uthscsa-footer{ background-color: #008c99; }';
 				echo '.site-title {color:#005d66;}';
+				echo '.title-bar{background-color:#005d66;}';
                 echo '</style>';
                 break;
 			case 'blueTheme':
@@ -80,6 +83,7 @@
 				echo '.top-bar-right, .top-bar-right ul li{ background-color: #004067; }';
 				echo '.uthscsa-footer{ background-color: #0066a4; }';
 				echo '.site-title {color:#0066a4; }';
+				echo '.title-bar{background-color:#004067;}';
                 echo '</style>';
                 break;
 			}
@@ -102,9 +106,12 @@
 		<div class="top-border">
 		
 		<!-- Custom Logo -->
-			<div class="logoHeader">
+			<div class="logoHeader row">
+			<div class="logoBox">
 				<a href="<?php echo get_option('home'); ?>"/><img src='<?php echo esc_url( get_theme_mod( 'FoundationPress_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
-				<div class="site-title"><?php printf( esc_html__( '| %s', '' ), get_bloginfo ( 'description' ) ); ?></div>
+			</div>
+				<div class="site-title"><?php printf( esc_html__( ' %s', '' ), get_bloginfo ( 'description' ) ); ?></div>
+			
 			</div>
 		<!-- End of Logo Div -->
 		
@@ -119,7 +126,7 @@
 				<!-- End of the Search Form -->
 			</div>
 			<!-- End of the Top Right Utility -->
-			
+
 			<!-- Start of Nav -->
 			<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 				<div class="row">
@@ -148,6 +155,7 @@
 			</div>
 			<!-- End of Mobile Nav -->
 		</header>
+
 
 	<section class="container">
 		<?php do_action( 'foundationpress_after_header' );
